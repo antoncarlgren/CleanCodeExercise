@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebsiteGenerator.DataReader
 {
-    class WebsiteDataReader : IDataReader
+    class FileReader : IDataReader
     {
     }
 }
