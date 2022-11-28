@@ -1,6 +1,6 @@
-namespace WebsiteGenerator.Website
+namespace WebsiteGenerator.Website;
 
-public class IWebsite
+interface IWebsite
 {
     
 }
