@@ -1,6 +1,6 @@
 namespace WebsiteGenerator.Website;
 
-public class PlainWebsite : IWebsite
+public class Website : IWebsite
 {
     public IEnumerable<string>? Messages { get; set; }
     public IEnumerable<string>? Courses { get; set; }

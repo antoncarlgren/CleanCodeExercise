@@ -2,8 +2,9 @@
 
 namespace WebsiteGenerator.WebsiteFactories
 {
-	internal interface IWebsiteFactory
-	{
-		Task<StyledWebsite> CreateStyledWebsite();
-	}
+    internal interface IWebsiteFactory
+    {
+        Task<StyledWebsite> CreateStyledWebsite();
+        Task<Website.Website> CreateWebsite();
+    }
 }
