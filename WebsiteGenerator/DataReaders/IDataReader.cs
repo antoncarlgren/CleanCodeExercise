@@ -8,7 +8,7 @@ namespace WebsiteGenerator.DataReader
 {
     interface IDataReader
     {
-        string GetString(string source);
-        IEnumerable<string> GetStringArray(string source);
+        Task<string> GetString(string source);
+        Task<IEnumerable<string>> GetStringArray(string source);
     }
 }

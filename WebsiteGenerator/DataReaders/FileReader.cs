@@ -1,28 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WebsiteGenerator.DataReader
+﻿namespace WebsiteGenerator.DataReader
 {
-    class FileReader : IDataReader
-    {
-        string IDataReader.GetString(string source)
-        {
-            if(File.Exists(source))
-            {
-                return File.ReadAllText(source);
-            }
-            else
-            {
-                File.WriteAllText(source, "blue");
-            }
-        }
+	internal class FileReader : IDataReader
+	{
+		public async Task<string> GetString(string source)
+		{
+			return await File.ReadAllTextAsync(source);
+		}
 
-        IEnumerable<string> IDataReader.GetStringArray(string source)
-        {
-            throw new NotImplementedException();
-        }
-    }
+		public async Task<IEnumerable<string>> GetStringArray(string source)
+		{
+			return await File.ReadAllLinesAsync(source);
+		}
+	}
 }

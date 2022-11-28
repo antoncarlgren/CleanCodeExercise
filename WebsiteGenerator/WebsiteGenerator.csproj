@@ -8,7 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="WebsiteGenerator" />
+      <Compile Remove="WebsiteGenerator\**" />
+      <EmbeddedResource Remove="WebsiteGenerator\**" />
+      <None Remove="WebsiteGenerator\**" />
     </ItemGroup>
 
 </Project>

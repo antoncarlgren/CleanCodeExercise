@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using WebsiteGenerator.Website;
 
 namespace WebsiteGenerator.WebsiteFactories
 {
-    interface IWebsiteFactory
-    {
-    }
+	internal interface IWebsiteFactory
+	{
+		StyledWebsite CreateStyledWebsite();
+	}
 }
